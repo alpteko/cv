@@ -1,0 +1,238 @@
+%------------------------------------
+% Sherry Yong Chen
+% Typesetting your academic CV in LaTeX
+%
+% URL: https://sherrychen.org
+% DISCLAIMER: This template is provided for free and without any guarantee
+% that it will correctly compile on your system if you have a non-standard
+% configuration.
+% Some rights reserved: http://creativecommons.org/licenses/by-sa/3.0/
+%------------------------------------
+
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[11.5pt, a4paper]{article}
+\usepackage{fontspec}
+
+% DOCUMENT LAYOUT
+\usepackage{geometry}
+\geometry{a4paper, textwidth=5in, textheight=8in, marginparsep=5pt, marginparwidth=.6in}
+\setlength\parindent{0in}
+
+% FONTS
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\defaultfontfeatures{Mapping=tex-text}
+%\setromanfont [Ligatures={Common}, Numbers={OldStyle}, Variant=01]{Linux Libertine O}
+%\setmonofont[Scale=0.8]{Monaco}
+
+\setmainfont[
+  Ligatures={Common}, Numbers={OldStyle}, Variant=01,
+  BoldFont=LinLibertine_RB.otf,
+  ItalicFont=LinLibertine_RI.otf,
+  BoldItalicFont=LinLibertine_RBI.otf
+]{LinLibertine_R.otf}
+\setmonofont[Scale=0.8]{DejaVuSansMono.ttf}
+
+% ---- CUSTOM COMMANDS
+\chardef\&="E050
+\newcommand{\html}[1]{\href{#1}{\scriptsize\textsc{[html]}}}
+\newcommand{\pdf}[1]{\href{#1}{\scriptsize\textsc{[pdf]}}}
+\newcommand{\doi}[1]{\href{#1}{\scriptsize\textsc{[doi]}}}
+% ---- MARGIN YEARS
+\usepackage{marginnote}
+\newcommand{\amper{}}{\chardef\amper="E0BD }
+\newcommand{\years}[1]{\marginnote{\scriptsize #1}}
+\renewcommand*{\raggedleftmarginnote}{}
+\setlength{\marginparsep}{7pt}
+\reversemarginpar
+
+% HEADINGS
+\usepackage{sectsty}
+\usepackage[normalem]{ulem}
+\sectionfont{\mdseries\upshape\Large}
+\subsectionfont{\mdseries\scshape\normalsize}
+\subsubsectionfont{\mdseries\upshape\large}
+
+
+% PDF SETUP
+% ---- FILL IN HERE THE DOC TITLE AND AUTHOR
+\usepackage[%dvipdfm,
+bookmarks, colorlinks, breaklinks,
+% ---- FILL IN HERE THE TITLE AND AUTHOR
+	pdftitle={Utku Turk - CV},
+	pdfauthor={Utku Turk},
+	pdfproducer={http://nitens.org/taraborelli/cvtex}
+]{hyperref}
+\hypersetup{linkcolor=black, citecolor=black, filecolor=black, urlcolor=black}
+
+%SYMBOLS
+\usepackage[misc]{ifsym}
+\usepackage{marvosym}
+\usepackage{url}
+\usepackage{fontspec}
+\usepackage{fontawesome}
+\newfontfamily{\FA}{fontawesome.otf}
+
+
+% DOCUMENT
+\begin{document}
+{\Huge Utku Türk}\\[1cm]
+Address: Bogazici University, John Freely Building, Door no: 314 \\
+\\
+%Country: Turkey\\[.2cm] 
+\Letter{ utku.turk@boun.edu.tr} \\
+\Mundus~\url{ https://tr.linkedin.com/in/utkuturk} \\
+\faGithub \thinspace \href{https://github.com/utkuturk}{\thinspace utkuturk}
+
+%%\hrule
+\section*{\faLightbulbO \thinspace Areas of Interest}
+
+\years{Broad} Linguistics, Computer Science, Teaching \\
+\years{Narrow} Historical Linguistics, Corpus Linguistics, Sociolinguistics, Bio-patterns on Language, Digital Literacy, Using Online Media in Language Learning and Teaching	 \\
+
+%\hrule
+\section*{\faGraduationCap \thinspace Education}
+
+\subsection*{Degree-seeking Programs}
+\noindent
+\years{2017- }\textbf{M.A in Linguistics}, Bogazici University \\
+ • Remedial year \\
+ • Employed as Research Assistant \\
+ 
+\noindent
+\years{2014-2015}\textbf{Exchange Program in Applied Linguistics}, UCLA \\
+ • Throughout the whole experience, I learned to make quick decisions in challenging multi-cultural situations. \\
+
+\noindent
+\years{2012-2017}\textbf{B.A in Translation Studies}, Bogazici University \\
+ • Translation Theories \\
+ • Interdisciplinary Studies including Economics, Politics, Philosophy, etc. \\
+ 
+\noindent
+\years{'12}\textbf{Teacher Training}, Tekirdag Anadolu Ogretmen Highschool \\
+
+ %\hrule
+ \subsection*{Non-degree Studies}
+ \noindent
+ \years{2018 Summer}Arché Project, Linguistics Summer Camp \\
+ \years{2018}Data Science, UC San DiegoX \\
+
+
+%\hrule
+\section*{\faBriefcase \thinspace Professional Experience}
+
+\subsection*{Research Assistant}
+\noindent
+\years{2018- }\emph{Bogazici University}. In my remedial year, I got accepted as a Research Assistant in the Linguistics Department. I also perform Teaching Assistant duties such as teaching problem sessions, preparing and grading assignments, and assisting the faculty.
+
+\subsection*{Proofreading}
+\noindent
+\years{2016-2018}\emph{Turkish, English, and Spanish Proofreader at ProTranslate}.
+
+\subsection*{Translating}
+\noindent
+\years{May 2013}\emph{U.S. Consulate General Istanbul}. I worked as a consecutive interpreter for Ann Symons, the former president of the American Librarians Association. \\
+\years{2013}\emph{SDL Turkey}. I worked as an intern.
+
+\subsection*{Organizing}
+\noindent
+\years{2018}Organizer, \emph{Student Conference on Theoretical and Experimental Linguistics}. Department of Linguistics, Bogazici University \\
+\years{2015}Organize, \emph{National Workshop of Translation Students, TÜÇEB}. Translation Student Club, Bogazici University  
+
+\subsection*{Outreach}
+\noindent
+\years{2015}Notetaker for \emph{UCLA Clockwork}, helped students with disabilities. \\
+\years{2014}Volunteer Subtitle Translator for \emph{Khan Academy} \\
+\years{2013}President of the \emph{Bogazici University Translation Club} \\
+
+
+%\hrule
+\section*{\faUniversity \thinspace Research Experience}
+
+\years{2018- }Project Assistant in TABILAB, \textsc{Bogazici University} \\
+  • Data Annotator: I annotate Turkish sentences and make guidelines for Universal Dependency Project.\\
+  • Projects: Universal Dependency \\
+\years{2018- }Member of \textsc{Quantitative Linguistics Circle}\\
+  • We design psycholinguistics and corpus linguistics experiments in Turkish. \\
+  • We are planning to create an open library for experiment templates for future Turkish experiments. \\
+
+
+%\hrule
+\section*{\faBook \thinspace Publications}
+
+\subsection*{Journal}
+\noindent
+\years{2014}\textbf{Evire Çevire}: This side is up! \\
+  • I worked as an Editor for the journal consisting of side-by-side translations from various languages. \\
+
+
+
+%\hrule
+\section*{\faMicrophone \thinspace Presentations}
+
+%\subsection*{Oral presentations}
+%\noindent
+%\years{2017}\textbf{Name.} Title. Presentation given at Blah Conference, Date \& Year, Univeristy of Blah, Country.
+
+%\subsection*{Conference posters}
+%\noindent
+%\years{2017}\textbf{Name.} Title. Poster presented at Blah Conference, Date \& Year, Place, Country.
+
+\subsection*{Public talks}
+\noindent
+\years{2016}\textbf{Constantine the Great as a Translator}. Talk given at National Workshop of Translation Students, TÜÇEB, Turkey. \\
+
+
+%\hrule
+\section*{\faMoney \thinspace Funding \& Grants}
+
+\subsection*{Internal \& External Funding}
+\noindent
+\years{2012-2017}Governmental Funding for top 100 students in University Entrance Exam
+
+%\subsection*{Travel grants}
+%\noindent
+%\years{2015-2017}Faculty Travel Grant, University of Blah \\
+
+
+%\hrule
+%\section*{\faUsers \thinspace Membership}
+
+%\years{2017-}Linguistic Society of Blah \\
+
+%\hrule
+\section*{\faPuzzlePiece \thinspace Hobbies}
+\textsc{Blogging}: I share my opinions on the books I read and love on a personal blog: \href{https://kindlegunlugu.blogspot.com.tr/}{\textsc{Kindle Günlüğü}} \\
+\textsc{Coding}: I spent most of my free time trying to learn a new coding language and create some help pages or tutorials for the languages I knew on my \href{https://github.com/utkuturk}{\textsc{Github}} account. \\
+\textsc{Other}: Trekking, Swimming, Sightseeing of Historical Places, E-sports \\
+%\hrule
+\section*{\faWrench \thinspace Skills}
+
+\subsection*{Languages}
+\textsc{Turkish}: Native \\
+\textsc{English and Spanish}: Full Professional Proficiency \\
+\textsc{Azerbaijani and Persian}: Elementary Level \\
+
+\subsection*{Computing}
+\textsc{Programming \& Statistics}: R, Ruby, JavaScript, Python, Swift, RegEx \\
+\textsc{Experimental}: E-Prime, Ibexfarm, Experiment Builder, Eyelink, Universal Dependencies \\
+\textsc{Translation Tools}: TRADOS, memoQ, Nubuto, smartCAT, XTRF
+
+\subsection*{Classes}
+\textsc{Phonology and Morphology of Modern Turkish (LING313), Syntax and Semantics of Modern Turkish (LING314), Language Typology (LING206), Phonetic (LING104), Phonology (LING201), Semantics (LING305), Brain & Language (LING316), Etymology (TR201) }
+
+
+
+
+%\vspace{1cm}
+\vfill{}
+%\hrulefill
+
+\begin{center}
+{\scriptsize  Last updated: \today\- •\- }
+\end{center}
+
+\end{document}
